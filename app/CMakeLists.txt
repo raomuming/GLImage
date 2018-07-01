@@ -24,3 +24,18 @@ target_link_libraries(triangle-lib
                       EGL
                       log
                       m)
+
+
+add_library(glimage-lib
+            SHARED
+            src/main/cpp/glimage/common/ImageHandler.cpp
+            src/main/cpp/glimage/interface/ImageHandlerWrapper.cpp
+            src/main/cpp/glimage/interface/ImageHandlerAndroid.cpp)
+
+
+target_link_libraries(glimage-lib
+                      ${OPENGL_LIB}
+                      android
+                      EGL
+                      log
+                      m)

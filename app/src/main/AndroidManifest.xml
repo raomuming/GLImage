@@ -19,6 +19,9 @@
 
         <activity android:name=".TriangleActivity">
         </activity>
+
+        <activity android:name=".BasicImageActivity">
+        </activity>
     </application>
 
 </manifest>
